@@ -1,0 +1,197 @@
+$font-weighs:('light':100 ,'normal': 400, 'medium': 500, 'bold':700);
+@mixin logoBlock{
+  display: flex;
+  justify-content: left;
+  p{
+    margin: 0;
+    padding-left: 10px;
+    padding-top: 5px;
+    font-size: 1.2em;
+    font-weight: map_get($font-weighs, 'bold');
+    span{
+      display: block;
+      text-align: center;
+      font-weight: map_get($font-weighs, 'normal');
+      font-size: 0.55em;
+    }
+  }
+  img{
+    width: 40px;
+    height: 40px;
+  }
+}
+@mixin button{
+  border-radius: 4px;
+  border: 0;
+  font-weight: map_get($font-weighs, 'bold');
+  background-color: $buttonColor;
+  color: white;
+  width: 130px;
+  height: 50px;
+}
+
+
+body{
+  background: $pagePrimaryBackground;
+  margin: 0;
+  height: 100vh;
+  font-family: 'Source Sans Pro', sans-serif;
+  header{
+    padding: 10px 45% 0 10vw;
+    background: $headerImage no-repeat center center;
+    background-size: 100% 100%;
+    height: 70vh;
+    color: $headerTextColor;
+    border-radius: 0 0 50% 0;
+    .landing-logo{
+      @include logoBlock;
+    }
+    .header_heading{
+      font-weight: map_get($font-weighs, 'bold');
+      font-size: 3.4em;
+      margin-bottom: 32px;
+      padding-right: 150px;
+      position: relative;
+      z-index: 2;
+      &::after{
+        content: "";
+        display: block;
+        position: relative;
+        z-index: -1;
+        background-color: $underlineColor;
+        width: 230px;
+        height: 20px;
+        top: -20px;
+      }
+    }
+    .header_text{
+      line-height: 25px;
+      padding-right: 50px;
+    }
+    .header_button{
+      @include button;
+      margin-top: 20px;
+    }
+  }
+  main{
+    background-color: $pagePrimaryBackground;
+    .section_text{
+      text-align: center;
+      font-weight: map_get($font-weighs, 'medium');
+      font-size: 2.3em;
+      position: relative;
+      color: $headerTextColor;
+      z-index: 1;
+      &::after{
+        content: "";
+        display: block;
+        position: relative;
+        background-color: $underlineColor;
+        z-index: -1;
+        width: 155px;
+        height: 15px;
+        top: -20px;
+        left: 773px;
+      }
+    }
+    .section_card_wrap{
+      display: flex;
+      justify-content: center;
+      .section_card {
+        display: block;
+        background-color: $pageSecondaryBackground;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 0 10px;
+        color: white;
+        width: 25%;
+        img {
+          width: 100%;
+          height: auto;
+        }
+        .section_card_heading{
+          text-align: center;
+          font-size: 1.5em;
+          margin-bottom: 10px;
+          position: relative;
+          z-index: 1;
+          .section_card_underline{
+            position: relative;
+            display: block;
+            background-color: $underlineColor;
+            width: 180px;
+            height: 10px;
+            z-index: -1;
+            top: -10px;
+            left: 100px;
+          }
+        }
+        .section_card_text{
+          font-size: 1em;
+          word-spacing: 3px;
+          font-weight: map_get($font-weighs, 'light');
+        }
+
+      }
+    }
+    .section_banner{
+      display: block;
+      margin: 0 auto;
+      background: linear-gradient(to left, $rightGradient, $leftGradient);
+      width: 60%;
+      height: 100px;
+      padding: 20px;
+      position: relative;
+      bottom: -70px;
+      border-radius: 10px;
+      .section_banner_heading{
+        font-size: 1.5em;
+        font-weight: map_get($font-weighs, 'bold');
+        margin-top: 10px;
+        color: $headerTextColor;
+        position: relative;
+        z-index: 1;
+        &::after{
+          content: "";
+          display: block;
+          position: relative;
+          background-color: $underlineColor;
+          z-index: -1;
+          width: 45px;
+          height: 10px;
+          top: -13px;
+          left: 100px;
+        }
+      }
+      .section_banner_text{
+        color: white;
+        font-size: 0.8em;
+      }
+      .section_banner_button{
+        position: relative;
+        top: -70px;
+        left: 750px;
+        @include button;
+      }
+    }
+  }
+  footer{
+    background-color: $pageSecondaryBackground;
+    color: white;
+    padding-top: 100px;
+    padding-bottom: 40px;
+    .footer-wrap{
+      display: flex;
+      justify-content: space-around;
+
+      .footer_logo{
+        @include logoBlock;
+      }
+      .footer_text{
+        width: 30%;
+        margin: 0;
+        @extend .section_banner_text;
+      }
+    }
+  }
+}
