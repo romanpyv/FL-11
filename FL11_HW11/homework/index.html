@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Homework 11 - TODO Cat List</title>
+  <link rel="stylesheet" href="./assets/material-icons/material-icons.css">
+  <link rel="stylesheet" href="./assets/styles.css">
+</head>
+<body>
+  <div id="root">
+    <h1>TODO Cat List</h1>
+    <h3 id="notification">Maximum item per list are created</h3>
+    <div id="add-menu">
+      <input type="text" id="add-text" placeholder="Add new action" oninput="activateAddButton();">
+      <i class="material-icons" id="add-button">add</i>
+    </div>
+    <hr>
+    <ul id="list">
+      <li id="action-template" draggable="true">
+        <div>
+          <input type="checkbox" class="mark">
+          <span>text</span>
+          <i class="material-icons change-icon">create</i>
+          <i class="material-icons delete-icon">delete</i>
+        </div>
+        <div class="inactive">
+          <input type="text">
+          <i class="material-icons save-icon">save</i>
+        </div>
+      </li>
+      <li draggable="true">
+        <div>
+          <input type="checkbox" class="mark">
+          <span>Find the cat</span>
+          <i class="material-icons change-icon">create</i>
+          <i class="material-icons delete-icon">delete</i>
+        </div>
+        <div class="inactive">
+          <input type="text">
+          <i class="material-icons save-icon">save</i>
+        </div>
+      </li>
+      <li draggable="true">
+        <div>
+          <input type="checkbox" class="mark">
+          <span>Prepare cat's carry</span>
+          <i class="material-icons change-icon">create</i>
+          <i class="material-icons delete-icon">delete</i>
+        </div>
+        <div class="inactive">
+          <input type="text">
+          <i class="material-icons save-icon">save</i>
+        </div>
+      </li>
+      <li draggable="true">
+        <div>
+          <input type="checkbox" class="mark">
+          <span>Bath a cat</span>
+          <i class="material-icons change-icon">create</i>
+          <i class="material-icons delete-icon">delete</i>
+        </div>
+        <div class="inactive">
+          <input type="text">
+          <i class="material-icons save-icon">save</i>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <script src="./src/app.js"></script>
+</body>
+</html>
