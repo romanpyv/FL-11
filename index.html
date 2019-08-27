@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>AJAX</title>
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <header>
+    <h1 class="header">Asynchronous JavaScript and XML</h1>
+    <div class="spinner none" id="spinner"></div>
+  </header>
+  <main>
+    <section class="users">
+      <h2 class="users-header">Users</h2>
+      <ul class="users-list" id="users-list">
+        <li class="users-list-item" id="template">
+          <div class="users-list-item-start">
+            <span class="users-list-item-id">1</span>
+            <img alt="Cat" class="users-list-item-img user-avatar">
+            <span class="users-list-item-name">TMP NAME</span>
+            <input type="text" placeholder="New name" class="users-list-item-change none">
+          </div>
+          <div class="users-list-item-end">
+            <button class="users-list-item-button edit-button">Edit</button>
+            <button class="users-list-item-button delete-button">Delete</button>
+            <button class="users-list-item-button save-button none">Save</button>
+          </div>
+          <div class="users-list-item-posts none">
+            <article class="users-list-item-posts-item none">
+              <h3 class="users-list-item-posts-title">roman@fas.c</h3>
+              <p class="users-list-item-posts-body"></p>
+              <button class="users-list-item-button comments-button">Load comments</button>
+              <div class="users-list-item-posts-comments none">
+                <div class="users-list-item-posts-comments-item none">
+                  <h4 class="users-list-item-posts-comments-email"></h4>
+                  <p class="users-list-item-posts-comments-body"></p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    &#169; Epam Front-end lab, 2019
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
