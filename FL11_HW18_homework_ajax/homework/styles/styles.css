@@ -1,0 +1,141 @@
+*{
+	outline: none;
+}
+.none{
+	display: none!important;
+}
+#template{
+	display: none;
+}
+body{
+	background-color: #232931;
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+}
+header{
+	background-color: #393e46;
+	color: #eeeeee;
+	text-align: center;
+	padding: 15px 0;
+}
+.header{
+	margin: 0;
+	font-size: 2.3em;
+}
+main{
+	width: 70%;
+	margin: 0 auto;
+}
+.users-header{
+	margin-left: 100px;
+	font-size: 2em;
+	color: #4ecca3;
+}
+.users-list{
+	list-style-type: none;
+}
+.users-list-item{
+	background-color: #393e46;
+	position: relative;
+	border: 2px solid #4ecca3;
+	border-radius: 20px;
+	padding: 15px 30px;
+	margin-bottom: 10px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.users-list-item-start, .users-list-item-end {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+.users-list-item-img{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	border: 3px solid #4ecca3;
+	margin-right: 30px;
+}
+.users-list-item-name{
+	color: #4ecca3;
+	margin: auto 0;
+}
+.users-list-item-button{
+	background-color: rgba(0,0,0,0);
+	color: #4ecca3;
+	border: 0;
+	font-size: 1em;
+}
+.users-list-item-change{
+	background-color: transparent;
+	border-radius: 8px;
+	border: 1px solid #4ecca3;
+	color: #4ecca3;
+	padding: 5px 10px;
+	font-size: 1em;
+	transition-duration: 500ms;
+}
+.users-list-item-change:focus{
+	background-color: rgba(0,0,0,0.2);
+	transition-duration: 500ms;
+}
+.users-list-item-id{
+	position: absolute;
+	left: -40px;
+	color: #4ecca3;
+	font-size: 1.6rem;
+}
+.users-list-item-posts{
+	margin: 20px auto 10px;
+	color: #eeeeee;
+	width: 90%;
+}
+.users-list-item-posts-item{
+	border-left: 2px solid #232931;
+	padding-left: 10px;
+	margin-bottom: 15px;
+}
+.users-list-item-posts-comments{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.users-list-item-posts-comments-item{
+	width: 48%;
+	box-sizing: border-box;
+	border: 2px solid #097774;
+	border-radius: 10px;
+	padding: 10px;
+	margin-bottom: 20px;
+	background-color: rgba(0,0,0,0.2);
+}
+.users-list-item-posts-comments-email{
+	margin-top: 5px;
+}
+.spinner{
+	width: 30px;
+	height: 30px;
+	position: fixed;
+	top: 20px;
+	right: 10%;
+	border: 2px solid #232931;
+	border-top-color: #4ecca3;
+	border-radius: 50%;
+	margin-right: 10px;
+	z-index: 10;
+	animation: spin 0.7s ease-in-out infinite;
+}
+@keyframes spin {
+	to{
+		transform: rotate(360deg);
+	}
+}
+footer{
+	margin-top: 50px;
+	background-color: #393e46;
+	color: #eeeeee;
+	height: 40px;
+	padding: 20px 0 0 50px;
+}
