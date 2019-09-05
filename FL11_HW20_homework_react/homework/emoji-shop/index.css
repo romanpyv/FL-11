@@ -1,0 +1,90 @@
+button{
+	background-color: deepskyblue;
+	border-radius: 3px;
+	border-width: 0;
+	color: white;
+	padding: 0.5em 1em;
+}
+.dashboard{
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	margin-top: 40px;
+}
+.emoji{
+	width: 30%;
+	margin-top: 20px;
+}
+.emoji h3{
+	margin: 5px 0;
+}
+.emoji-body{
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.previev{
+	position: relative;
+	height: 30px
+}
+.previev-first{
+	position: absolute;
+	transform: translate(-50%, -50%);
+	z-index: 1;
+	font-size: 2rem;
+	left: 50%;
+	top: 10%;
+}
+.previev-second{
+	position: absolute;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+	font-size: 1.5rem;
+	left: 57%;
+	top: 50%;
+}
+.previev-third{
+	position: absolute;
+	transform: translate(-50%, -50%);
+	z-index: 3;
+	font-size: 1rem;
+	left: 50%;
+	top: 60%;
+}
+.container{
+	display: flex;
+	justify-content: center;
+}
+.main{
+	width: 60%;
+}
+.news{
+	margin: 0 auto;
+	font-size: 1.3rem;
+}
+button[disabled]{
+	background: grey;
+}
+.buy-item{
+	display: flex;
+	justify-content: space-between;
+	margin: 5px;
+}
+.buy-item p{
+	margin: 0;
+}
+.basket{
+	width:20%;
+}
+.cross{
+	color: red;
+}
+.stars{
+	color: yellow;
+}
+.purchase{
+	margin-top: 10px;
+}
+
