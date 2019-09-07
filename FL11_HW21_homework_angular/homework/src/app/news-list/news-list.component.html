@@ -1,0 +1,4 @@
+<main-header></main-header>
+<div *ngFor="let item of newsList.getFilteredList() " class="news-list">
+  <news-item [item]="item"></news-item>
+</div>
