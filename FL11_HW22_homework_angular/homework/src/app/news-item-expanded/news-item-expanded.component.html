@@ -1,0 +1,17 @@
+<h1 class="source">{{item.source}}</h1>
+<a routerLink="/news" class="back">&#8592;</a>
+<div class="item-container">
+  <div class="img-wrapper">
+    <img src="../../assets/news.jpg" alt="image" class="image">
+  </div>
+
+  <div class="content">
+    <h2 class="header">{{item.title}}</h2>
+
+    <p class="body">{{item.body}}</p>
+
+    <p class="date">{{item.date | date: 'dd/MM/yy H:mm'}}</p>
+
+    <p class="author">{{item.source}}</p>
+  </div>
+</div>

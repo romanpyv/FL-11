@@ -1,0 +1,25 @@
+<header class="header">
+  <h1 class="source">{{curSource}}</h1>
+  <div class="actions">
+    <div class="source-choice">
+      <select id="select" (change)="changeSource($event.target.value)">
+        <option
+                *ngFor="let option of options"
+                [value]="option"
+        >
+          {{option}}
+        </option>
+      </select>
+    </div>
+
+    <div class="filter">
+      <input type="text" id="headerFilter">
+
+      <button (click)="filterByHeader()">Filter</button>
+    </div>
+
+    <div class="add">
+      <a routerLink="/add">Add article</a>
+    </div>
+  </div>
+</header>

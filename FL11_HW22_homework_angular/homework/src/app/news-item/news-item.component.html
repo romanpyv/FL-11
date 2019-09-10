@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="image">
+    <img src="../../assets/news.jpg" alt="preview">
+  </div>
+
+  <div class="content">
+    <h3 class="content-title">
+      {{item.title}}
+    </h3>
+
+    <p class="content-body">
+      {{item.short}}
+    </p>
+
+    <a [routerLink]="['/news', item.id]">Read more...</a>
+  </div>
+
+  <div class="date">
+    <p>
+      Date: {{item.date | date: 'dd/MM/yy H:mm'}}
+    </p>
+  </div>
+</div>

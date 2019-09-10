@@ -1,0 +1,40 @@
+<div class="container">
+  <h2 class="header">Create news</h2>
+  <div class="form-container">
+    <div class="half">
+      <label> Heading <br>
+        <input type="text" id="title">
+      </label>
+
+      <label> Short description <br>
+        <input type="text" id="short">
+      </label>
+
+      <label> Content <br>
+        <textarea cols="30" rows="6" id="body"></textarea>
+      </label>
+    </div>
+
+    <div class="half">
+      <label> Date <br>
+        <input type="date" id="date">
+      </label>
+      <label> Author <br>
+        <input type="text" id="source">
+      </label>
+      <label> Source URL <br>
+        <input type="text" id="sourceUrl">
+      </label>
+
+      <div class="buttons">
+        <button id="save" (click)="addNews()">
+          Save
+        </button>
+
+        <button routerLink="/">
+          Cancel
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
