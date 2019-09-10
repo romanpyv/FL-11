@@ -16,7 +16,7 @@ export class MainHeaderComponent implements OnInit {
     }
 
     filterByHeader() {
-        const newHeaderFilter = document.getElementById('headerFilter').value;
+        const newHeaderFilter = (document.getElementById('headerFilter') as HTMLInputElement).value;
         newsList.changeHeaderFilter(newHeaderFilter);
     }
 
