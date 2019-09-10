@@ -10,11 +10,11 @@ import {Router} from '@angular/router';
 export class AddNewsComponent implements OnInit {
 
     addNews() {
-        const title = (document.getElementById('title')).value;
-        const short = document.getElementById('short').value;
-        const body = document.getElementById('body').value;
-        const source = document.getElementById('source').value;
-        const date = document.getElementById('date').value;
+        const title = (document.getElementById('title') as HTMLInputElement).value;
+        const short = (document.getElementById('short') as HTMLInputElement).value;
+        const body = (document.getElementById('body') as HTMLInputElement).value;
+        const source = (document.getElementById('source') as HTMLInputElement).value;
+        const date = (document.getElementById('date') as HTMLInputElement).value;
 
         if (title && short && body && source && date) {
             const res: NewsItem = {
