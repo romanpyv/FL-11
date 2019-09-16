@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title></title>
+  </head>
+  <body>
+    <header>
+      <h1 class="title">Rock Paper Scissors</h1>
+    </header>
+    <main>
+      <section class="rules-wrapper">
+        <h2 class="rules-head">
+          Rules are simple:
+        </h2>
+        <img src="./img/rules.jpg" alt="" id="rules" class="rules" />
+      </section>
+      <h2 class="lets">Let's play!</h2>
+      <section class="game">
+        <div class="score-wrapper">
+          <p>Score</p>
+          <h3 id="score" class="score">0 - 0</h3>
+          <textarea
+            cols="50"
+            rows="4"
+            class="game-log"
+            id="log"
+            readonly
+          ></textarea>
+        </div>
+        <div class="images">
+          <div class="player"></div>
+          <div class="computer"></div>
+        </div>
+        <div class="buttons">
+          <button class="button" id="rock">🗻</button>
+          <button class="button" id="paper">📰</button>
+          <button class="button" id="scissors">✂</button>
+        </div>
+        <button class="reset" id="reset">Reset</button>
+      </section>
+    </main>
+  </body>
+</html>
