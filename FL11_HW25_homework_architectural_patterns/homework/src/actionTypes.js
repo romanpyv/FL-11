@@ -1,0 +1,5 @@
+export default {
+    LOAD_USERS: 'LOAD_USERS',
+    DELETE_USER: 'DELETE_USER',
+    CHANGE_FILTER: 'CHANGE_FILTER'
+};

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>FL11 Homework</title>
+	</head>
+	<body>
+		<div class="root" id="root">
+			<header>
+				<label> Search by name:
+					<input type="text" placeholder="Enter user's name" id="filter">
+				</label>
+			</header>
+
+			<main>
+				<table>
+					<thead>
+            <tr>
+              <th>Photo</th>
+              <th>Name</th>
+              <th>Address</th>
+              <th>Email</th>
+              <th>Phone number</th>
+              <th>Timezone</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="tbody"></tbody>
+				</table>
+			</main>
+
+			<footer>
+				<h3 id="displayed-count">Displayed 1 users out of 21</h3>
+				<button id="load-button">LOAD MORE</button>
+			</footer>
+		</div>
+
+		<script src="index.js"></script>
+	</body>
+</html>
